@@ -22,7 +22,7 @@ bin/lzupdate.py --build mm10
 
 using conf/m2z.config file to change your configuration
 
-# To run LocusZoom to draw mouse genome locuszoom next steps:
+# To run LocusZoom to draw mouse genome locuszoom, use six steps:
 
 (1) log in into Attie-VM
 (2)$ ls
