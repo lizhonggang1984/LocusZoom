@@ -32,7 +32,7 @@ using conf/m2z.config file to change your configuration
 (3) // conduct shell to setup path for tabix for LD calculation 
    export PATH=$PATH:/mnt/data/locuszoom/tabix-0.2.6
 
-(4) //upload gwas file to the example folder
+(4) //upload mouse gwas file to the example folder
 
    this text file must have at least two columns,   
    MarkerName and P-value (column name should be exactly these two)
@@ -48,5 +48,27 @@ using conf/m2z.config file to change your configuration
    or ./mouse_no_ld.py (if not using LD block)
    or ./mouse_hapmap.py (if using hapmap data for LD calculation)
    
- 
+ # To run LocusZoom to draw human genome locuszoom, use six steps:
+(1) log in into Attie-VM
+(2)$ ls
+   $ sudo su
+   $ (YOURpassword)
+   $ cd /mnt/data/locuszoom/gwas
+(3) // conduct shell to setup path for tabix for LD calculation 
+   export PATH=$PATH:/mnt/data/locuszoom/tabix-0.2.6
+
+(4) //upload human gwas file to the example folder
+
+   this text file must have at least two columns,   
+   MarkerName and P-value (column name should be exactly these two)
+   
+(5) // edit python file to perform locuszoom
+   // to calculate LD, using our scripted python script to do it
+   
+   change   --refsnp  to your snp  and change --flank   to 200kb or 500kb as needed
+   
+(6)  //conduct human gwas plot to draw plots
+
+   ./glgc_exometc.py   
+   or other related python file (modify file folder and name to draw plots)
    
