@@ -45,4 +45,8 @@ using conf/m2z.config file to change your configuration
 (6)  //conduct  ./mouse_vcf.py to draw plots
 
    ./mouse_vcf.py
+   or ./mouse_no_ld.py (if not using LD block)
+   or ./mouse_hapmap.py (if using hapmap data for LD calculation)
+   
+ 
    
